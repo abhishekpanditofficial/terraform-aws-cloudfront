@@ -14,15 +14,14 @@ func TestTerraformCloudfrontExample(t *testing.T) {
 	terraformOptions := terraform.WithDefaultRetryableErrors(t, &terraform.Options{
 		TerraformDir: "../examples/cloudfront",
 		Vars: map[string]interface{}{
-			"Client":"test"
-			"primary_bucket_name": "test-primary-terraform"
-			"failover_bucket_name": "test-failover-terraform"
-			"logging_bucket_name": "test-logging-bucket-testproject"
-			"domain_name": "test.domain.com"
-			"acl_name":"test-acl"
-			"acl_description":"test-acl-description"
-			"metric_name":"test-metric-name"
-			"project_id ": "testid"			
+			"Client":"test",
+			"primary_bucket_name": "test-primary-terraform",
+			"failover_bucket_name": "test-failover-terraform",
+			"logging_bucket_name": "test-logging-bucket-testproject",
+			"domain_name": "test.domain.com",
+			"acl_name": "test-acl",
+			"acl_description": "test-acl-description",
+			"metric_name": "test-metric-name",		
 		},
 	})
 
