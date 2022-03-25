@@ -59,6 +59,5 @@ module "aws_cloudfront" {
   web_acl_arn= module.aws_waf.acl_arn
   acm_arn= module.acm_certificate.ARN
   logging_bucket = module.aws_s3_logging.bucket_regional_domain_name
-  project_id = var.project_id
   Client= var.Client
 }

@@ -32,7 +32,4 @@ variable "metric_name" {
   type = string
   description = "Metric name for web-acl"
 }
-variable "project_id" {
-  type = string
-  description = "project id of the project"
-}
+

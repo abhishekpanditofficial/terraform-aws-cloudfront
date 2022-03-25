@@ -11,10 +11,6 @@ variable "logging_bucket" {
     type = string
     description = "Logging bucket"
 }
-variable "project_id" {
-    type = string
-    description = "project id of the project"
-}
 
 variable "web_acl_arn" {
     type = string

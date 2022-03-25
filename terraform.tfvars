@@ -6,4 +6,4 @@ domain_name = "abhishek.domain.com"
 acl_name="test-acl"
 acl_description="test-acl-description"
 metric_name="test-metric-name"
-project_id = "testid"
+

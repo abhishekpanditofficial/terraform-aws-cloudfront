@@ -34,7 +34,6 @@ resource "aws_cloudfront_distribution" "Client_Cloudfront_Instance" {
 
   origin {
     domain_name = var.primary_bucket_regional_domain_name
-    # origin_path = var.project_id
     origin_id   = local.s3_prim_origin_id
 
     s3_origin_config {
@@ -44,7 +43,6 @@ resource "aws_cloudfront_distribution" "Client_Cloudfront_Instance" {
 
   origin {
     domain_name = var.failover_bucket_regional_domain_name
-    # origin_path = var.project_id
     origin_id   = local.s3_fail_origin_id
 
     s3_origin_config {
